@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1290.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.battleship.controller.GameFieldController">
+   <children>
+      <Canvas fx:id="p1Board" height="600.0" layoutX="20.0" layoutY="151.0" onMouseClicked="#handleClickOne" width="600.0" />
+      <Canvas fx:id="p2Board" height="600.0" layoutX="670.0" layoutY="151.0" onMouseClicked="#handleClickTwo" width="600.0" />
+      <Label layoutX="237.0" layoutY="99.0" text="Player One's Board">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="887.0" layoutY="99.0" text="Player Two's Board">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="463.0" layoutY="34.0" text="Current State:">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="state" layoutX="658.0" layoutY="34.0" text="State">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="info" layoutX="578.0" layoutY="793.0" text="informatív cucc">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="save" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleSave" text="Save Game" />
+      <Button fx:id="load" layoutX="103.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleLoad" text="Load Game" />
+   </children>
+</AnchorPane>
